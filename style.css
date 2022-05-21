@@ -1,0 +1,64 @@
+/* main section */
+.video-thumbnail {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 8px;
+    margin-left: 5px;
+}
+@media (max-width: 900px) {
+    .video-thumbnail{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .video-thumbnail{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.main-img {
+    width: 100%;
+}
+.info{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.channel-img {
+    display: inline-block;
+    width: 40px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.video-info p{
+    margin-top: 8px;
+    line-height: 20px;
+    padding-top: 1px;
+}
+.video-title{
+    font-weight: 700;
+}
+.channel-name, .video-view{
+    font-size: 13px;
+    font-weight: 500;
+    height: 8px;
+    color: rgb(97, 97, 97);
+}
+.video-view{
+    /* margin-bottom: 40px; */
+}
+.notification-icon-container{
+    position: relative;
+}
+.notification-count p{
+    position: absolute;
+    top: -10px;
+    right: 86px;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+}
+.home-icon,.explore-icon, .short-icon, .subscription-icon, .library-icon {
+    width: 30px;
+}
